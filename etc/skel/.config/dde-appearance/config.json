@@ -1,0 +1,15 @@
+[
+    {
+        "type": "index+monitorName",
+        "wallpaperInfo": [
+            {
+                "uri": "file:///usr/share/wallpapers/deepin/dde-desktop.jpg",
+                "wpIndex": "1+Virtual-1"
+            },
+            {
+                "uri": "file:///usr/share/wallpapers/deepin/Grassland_Scenery_by_Shi_Yuejun.jpg",
+                "wpIndex": "2+Virtual-1"
+            }
+        ]
+    }
+]
