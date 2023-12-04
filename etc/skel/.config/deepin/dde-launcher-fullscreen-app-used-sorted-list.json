@@ -7,11 +7,11 @@
             "categoryId": 9,
             "description": "",
             "desktop": "/usr/share/applications/calamares-biglinux.desktop",
-            "firstRunTime": 0,
+            "firstRunTime": 1701726752,
             "iconKey": "icon-big-hd-install",
             "installTime": 1701724758,
             "isDir": false,
-            "openCount": 0,
+            "openCount": 5,
             "progressValue": 0
         },
         "itemInfoList_1": {
@@ -631,7 +631,7 @@
             "iconKey": "kfind",
             "installTime": 1701724748,
             "isDir": false,
-            "openCount": 1,
+            "openCount": 2,
             "progressValue": 0
         },
         "itemInfoList_3": {
@@ -712,11 +712,11 @@
             "categoryId": 9,
             "description": "",
             "desktop": "/usr/share/applications/deepin-terminal.desktop",
-            "firstRunTime": 0,
+            "firstRunTime": 1701726462,
             "iconKey": "deepin-terminal",
             "installTime": 1701724758,
             "isDir": false,
-            "openCount": 1,
+            "openCount": 4,
             "progressValue": 0
         },
         "itemInfoList_7": {
