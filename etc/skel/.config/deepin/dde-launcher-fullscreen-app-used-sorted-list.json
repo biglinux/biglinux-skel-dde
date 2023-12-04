@@ -621,31 +621,17 @@
             "progressValue": 0
         },
         "itemInfoList_25": {
-            "appKey": "biglinuxforum-webapp-biglinux",
-            "appName": "BigLinux Forum",
-            "appStatus": 0,
-            "categoryId": 10,
-            "description": "",
-            "desktop": "/home/biglinux/.local/share/applications/biglinuxforum-webapp-biglinux.desktop",
-            "firstRunTime": 0,
-            "iconKey": "biglinux-globo.png",
-            "installTime": 1701724501,
-            "isDir": false,
-            "openCount": 0,
-            "progressValue": 0
-        },
-        "itemInfoList_26": {
             "appKey": "org.kde.kfind",
             "appName": "KFind",
             "appStatus": 0,
             "categoryId": 9,
             "description": "",
             "desktop": "/usr/share/applications/org.kde.kfind.desktop",
-            "firstRunTime": 0,
+            "firstRunTime": 1701726137,
             "iconKey": "kfind",
             "installTime": 1701724748,
             "isDir": false,
-            "openCount": 0,
+            "openCount": 1,
             "progressValue": 0
         },
         "itemInfoList_3": {
