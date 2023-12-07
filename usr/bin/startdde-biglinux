@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Caminho para o binário original do dde-session
+ddeSessionOriginal="/usr/bin/dde-session-original"
+
+# Suas ações personalizadas aqui
+# ...
+
+# Executa o dde-session original
+exec "$ddeSessionOriginal" "$@"

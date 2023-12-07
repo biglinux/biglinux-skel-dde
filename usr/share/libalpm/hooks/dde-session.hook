@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = dde-session
+
+[Action]
+Description = Updating dde-session with custom script
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/dde-session-update-script
