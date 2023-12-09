@@ -1,20 +1,6 @@
 {
     "lists": {
         "itemInfoList_0": {
-            "appKey": "dde-control-center",
-            "appName": "Control Center",
-            "appStatus": 0,
-            "categoryId": 9,
-            "description": "",
-            "desktop": "/usr/share/applications/dde-control-center.desktop",
-            "firstRunTime": 0,
-            "iconKey": "preferences-system",
-            "installTime": 0,
-            "isDir": false,
-            "openCount": 0,
-            "progressValue": 0
-        },
-        "itemInfoList_1": {
             "appKey": "dde-file-manager",
             "appName": "File Manager",
             "appStatus": 0,
