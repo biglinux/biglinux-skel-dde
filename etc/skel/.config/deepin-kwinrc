@@ -9,7 +9,8 @@ Id_2=9e2b487f-4331-4bf0-9344-2483a5abc9bf
 BorderActivate=
 
 [Script-runcommandaction]
-BorderActivate=
+Border9Program=dde-launcher
+BorderActivate=,9
 
 [Workspace]
 CurrentDesktop=1
