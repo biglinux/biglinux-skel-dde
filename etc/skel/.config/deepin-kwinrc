@@ -2,14 +2,15 @@
 OpenGLIsUnsafe=false
 
 [Desktops]
-Id_1=11bfb482-0109-4a2f-934d-b5d752aea787
-Id_2=76580753-bc6c-4919-a91b-b0f4d1ad072f
+Id_1=d2694976-f191-4c08-850e-218e87bc5f94
+Id_2=9e2b487f-4331-4bf0-9344-2483a5abc9bf
 
 [Script-closewindowaction]
 BorderActivate=
 
 [Script-runcommandaction]
-BorderActivate=
+Border9Program=dde-launcher
+BorderActivate=,9
 
 [Workspace]
 CurrentDesktop=1
