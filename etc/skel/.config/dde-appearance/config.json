@@ -3,12 +3,16 @@
         "type": "index+monitorName",
         "wallpaperInfo": [
             {
-                "uri": "file:///usr/share/wallpapers/deepin/penguin art2.jpeg",
+                "uri": "file:///usr/share/wallpapers/deepin/dog7.jpeg",
                 "wpIndex": "1+Virtual-1"
             },
             {
-                "uri": "file:///usr/share/wallpapers/deepin/penguin color splash dark3.jpeg",
+                "uri": "file:///usr/share/wallpapers/deepin/conceitual multimedia6.jpeg",
                 "wpIndex": "2+Virtual-1"
+            },
+            {
+                "uri": "file:///usr/share/wallpapers/deepin/fenix cosmos.jpeg",
+                "wpIndex": "0+Virtual-1"
             }
         ]
     }
