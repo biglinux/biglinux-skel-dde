@@ -163,3 +163,9 @@ else
         PS1="$systemBg$greenFg   $systemFg$greenBg $blackFg$greenBg\w $fmtReset$greenFg$fmtReset "
     fi
 fi
+
+# Sets the default visual editor to nano for programs that use the VISUAL environment variable.
+export VISUAL=nano
+
+# Sets the default text editor to nano for programs that use the EDITOR environment variable.
+export EDITOR=nano
