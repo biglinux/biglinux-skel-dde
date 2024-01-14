@@ -1,32 +1,40 @@
 {
-    "contents": {
-        "Dock_Quick_Plugins": {
-            "permissions": "readwrite",
-            "serial": 0,
-            "value": [
-							"power",
-							"network",
-							"shutdown",
-							"show-desktop",
-							"multitasking",
-							"system-monitor",
-							"grand-search",
-							"sound",
-							"trash" 
-							]
-        },
-        "Docked_Apps": {
-            "permissions": "readwrite",
-            "serial": 0,
-            "value": [ 
-							"/usr/share/applications/dde-file-manager",
-							"/usr/share/applications/brave-browser",
-							"/usr/share/applications/deepin-editor",
-							"/usr/share/applications/deepin-calculator",
-							"/usr/share/applications/dde-control-center"
-							]
-        }
-    },
-    "magic": "dsg.config.override",
-    "version": "1.0"
+	"magic": "dsg.config.override",
+	"version": "1.0",
+	"contents": {
+		"Hide_Mode": {
+			"value": "smart-hide",
+			"serial": 0,
+			"name": "Hide_Mode",
+			"description": "The value will influence when the dock is shown or hidden.",
+			"permissions": "readwrite",
+			"visibility": "private"
+		},
+		"Dock_Quick_Plugins": {
+			"permissions": "readwrite",
+			"serial": 0,
+			"value": [
+				"power",
+				"network",
+				"shutdown",
+				"show-desktop",
+				"multitasking",
+				"system-monitor",
+				"grand-search",
+				"sound",
+				"trash" 
+			]
+		},
+		"Docked_Apps": {
+			"permissions": "readwrite",
+			"serial": 0,
+			"value": [ 
+				"/usr/share/applications/dde-file-manager",
+				"/usr/share/applications/brave-browser",
+				"/usr/share/applications/deepin-editor",
+				"/usr/share/applications/deepin-calculator",
+				"/usr/share/applications/dde-control-center"
+			]
+		}
+	}
 }
