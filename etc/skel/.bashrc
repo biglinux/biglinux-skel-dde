@@ -189,3 +189,5 @@ unset_var_proxy() {
 export -f unset_var_proxy
 
 unset_var_proxy
+
+. /etc/bashrc
