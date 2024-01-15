@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [ -e /usr/local/bin/pamac-manager ]; then
+    cp -f /usr/local/bin/pamac-manager /usr/local/bin/pamac-manager.bak
+    mv -f /usr/local/bin/big-pamac-manager /usr/local/bin/pamac-manager
+fi
+
+if [ -e /usr/share/applications/org.manjaro.pamac.manager.desktop ]; then
+    cp -f /usr/share/applications/org.manjaro.pamac.manager.desktop /usr/share/applications/org.manjaro.pamac.manager.desktop.bak
+    mv -f /usr/share/applications/big-org.manjaro.pamac.manager.desktop /usr/share/applications/org.manjaro.pamac.manager.desktop
+fi
+
+if [ -e /usr/share/dbus-1/services/org.manjaro.pamac.manager.service ]; then
+    cp -f /usr/share/dbus-1/services/org.manjaro.pamac.manager.service /usr/share/dbus-1/services/org.manjaro.pamac.manager.service.bak
+    mv -f /usr/share/dbus-1/services/big-org.manjaro.pamac.manager.service /usr/share/dbus-1/services/org.manjaro.pamac.manager.service
+fi
