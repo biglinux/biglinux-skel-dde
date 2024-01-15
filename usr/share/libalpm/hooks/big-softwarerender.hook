@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = render-menu-options
+Target = biglinux-skel-dde
+
+[Action]
+Description = BigLinux SoftwareRender change
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/big-softwarerender
