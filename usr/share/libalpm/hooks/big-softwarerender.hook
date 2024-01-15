@@ -3,6 +3,7 @@ Type = Package
 Operation = Install
 Operation = Upgrade
 Target = render-menu-options
+Target = pamac-gtk
 Target = biglinux-skel-dde
 
 [Action]
