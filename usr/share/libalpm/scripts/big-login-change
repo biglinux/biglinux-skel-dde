@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ -e /usr/share/wallpapers/deepin/desktop.jpg ]; then
+  mv -f /usr/share/wallpapers/deepin/desktop.jpg /usr/share/wallpapers/deepin/desktop.jpg.bak
+fi
+mv -f /usr/share/wallpapers/deepin/big-desktop.jpg /usr/share/wallpapers/deepin/desktop.jpg
