@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
 
+# Replacing the original pamac-manager file with the modified Biglinux file
 if [ -e /usr/local/bin/pamac-manager ]; then
 	mv -f /usr/local/bin/pamac-manager /usr/local/bin/pamac-manager.bak
 fi
 mv -f /usr/local/bin/big-pamac-manager /usr/local/bin/pamac-manager
 
+# Replacing the original org.manjaro.pamac.manager.deskto file with the modified Biglinux file
 if [ -e /usr/share/applications/org.manjaro.pamac.manager.desktop ]; then
 	mv -f /usr/share/applications/org.manjaro.pamac.manager.desktop /usr/share/applications/org.manjaro.pamac.manager.desktop.bak
 fi
 mv -f /usr/share/applications/big-org.manjaro.pamac.manager.desktop /usr/share/applications/org.manjaro.pamac.manager.desktop
 
+# Replacing the original org.manjaro.pamac.manager.service file with the modified Biglinux file
 if [ -e /usr/share/dbus-1/services/org.manjaro.pamac.manager.service ]; then
 	mv -f /usr/share/dbus-1/services/org.manjaro.pamac.manager.service /usr/share/dbus-1/services/org.manjaro.pamac.manager.service.bak
 fi
