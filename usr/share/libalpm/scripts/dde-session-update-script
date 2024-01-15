@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ddeSessionBin="/usr/bin/dde-session"
 ddeSessionOriginalBin="/usr/bin/dde-session-original"
@@ -6,9 +6,9 @@ wrapperScript="/usr/bin/startdde-biglinux"
 
 # Renomeia o binário original, se ainda não foi renomeado
 if [ -f "$ddeSessionBin" ] && [ ! -f "$ddeSessionOriginalBin" ]; then
-    mv "$ddeSessionBin" "$ddeSessionOriginalBin"
+	mv -f "$ddeSessionBin" "$ddeSessionOriginalBin"
 fi
 
 # Copia o script wrapper para substituir o dde-session
-cp "$wrapperScript" "$ddeSessionBin"
+cp -f "$wrapperScript" "$ddeSessionBin"
 chmod +x "$ddeSessionBin"
