@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.manjaro.pamac.manager
+#Exec=/usr/bin/pamac-manager --gapplication-service
+Exec=/usr/local/bin/pamac-manager --gapplication-service
