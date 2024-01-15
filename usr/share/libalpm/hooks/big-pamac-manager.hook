@@ -1,0 +1,10 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = biglinux-skel-dde
+
+[Action]
+Description = BigLinux Pamac change
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/big-pamac-manager
