@@ -13,7 +13,7 @@ ffs() {
     #   sudo find . -type f -iname '*'"$2"'*' -exec grep --text -iE "($1)" {} +;
     #   sudo grep -r --color=auto -n -iE "($1)" $2;
     #   sudo find . -type d -name bcc-archived -prune -o -type f -iname '*'"$2"'*' -exec grep --color=auto -n -iE "($1)" {} +;
-    sudo find . -type d -name bcc-archived -prune -o -type f \( -iname '*'"$2"'*' -and ! -iname '*.pot' -and ! -iname '*.mo' -and ! -iname '*.po' \) -exec grep --color=auto -n -iE >
+    sudo find . -type d -name bcc-archived -prune -o -type f \( -iname '*'"$2"'*' -and ! -iname '*.pot' -and ! -iname '*.mo' -and ! -iname '*.po' \) -exec grep --color=auto -n -iE "($1)" {} +
 }
 export -f ffs
 
