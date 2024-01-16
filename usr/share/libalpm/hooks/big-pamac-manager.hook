@@ -7,4 +7,4 @@ Target = biglinux-skel-dde
 [Action]
 Description = BigLinux Pamac change
 When = PostTransaction
-Exec = /usr/share/libalpm/scripts/big-pamac-manager
+Exec = /usr/share/libalpm/scripts/big-pamac-manager.sh

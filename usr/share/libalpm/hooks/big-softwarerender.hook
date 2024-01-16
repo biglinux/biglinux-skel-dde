@@ -9,4 +9,4 @@ Target = biglinux-skel-dde
 [Action]
 Description = BigLinux SoftwareRender change
 When = PostTransaction
-Exec = /usr/share/libalpm/scripts/big-softwarerender
+Exec = /usr/share/libalpm/scripts/big-softwarerender.sh
