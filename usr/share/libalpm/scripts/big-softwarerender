@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# Replacing the original SoftwareRender file with the modified Biglinux file
-if [ -e /usr/bin/SoftwareRender ]; then
-	mv -f /usr/bin/SoftwareRender /usr/bin/SoftwareRender.bak
-fi
-mv -f /usr/bin/big-SoftwareRender /usr/bin/SoftwareRender

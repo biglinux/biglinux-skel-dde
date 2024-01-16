@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+. /usr/share/bigdde/shell/ddelib.sh
+unset_var_proxy
+__NV_PRIME_RENDER_OFFLOAD="" __VK_LAYER_NV_optimus="" __GLX_VENDOR_LIBRARY_NAME="" DRI_PRIME=1 $@
