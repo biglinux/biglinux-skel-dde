@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Changing the default login file 
+if [ -e /usr/share/wallpapers/deepin/desktop.jpg ]; then
+  mv -f /usr/share/wallpapers/deepin/desktop.jpg /usr/share/wallpapers/deepin/desktop.jpg.bak
+fi
+mv -f /usr/share/wallpapers/deepin/big-desktop.jpg /usr/share/wallpapers/deepin/desktop.jpg
+
+# Changing the default background file
+if [ -e /usr/share/backgrounds/deepin/desktop.jpg ]; then
+  mv -f /usr/share/backgrounds/deepin/desktop.jpg /usr/share/backgrounds/deepin/desktop.jpg.bak
+fi
+mv -f /usr/share/backgrounds/deepin/big-desktop.jpg /usr/share/backgrounds/deepin/desktop.jpg

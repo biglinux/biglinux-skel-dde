@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = deepin-wallpapers
+Target = biglinux-skel-dde
+
+[Action]
+Description = Change wallpaper login
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/big-login-change
