@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# The .desktop files have the OnlyShowIn option for Deepin and the correct one is DDE. Performing the concert directly in the archive
+FILES="/usr/share/applications/dde-printer.desktop /usr/share/applications/deepin-screen-recorder.desktop"
+
+for file in $FILES; do
+    if grep -q "OnlyShowIn=DDE" "$file"; then
+        echo "The file $file is already set to OnlyShowIn=DDE."
+    else
+        echo "Updating OnlyShowIn=Deepin to OnlyShowIn=DDE in $file."
+        sudo sed -i 's/OnlyShowIn=Deepin/OnlyShowIn=DDE/g' "$file"
+    fi
+done
