@@ -9,15 +9,30 @@ arch=('any')
 url="https://github.com/biglinux/$pkgname"
 license=('GPL3')
 depends=('biglinux-dde-base')
-provides=("$pkgname")
+provides=('bashrc')
 source=("git+${url}.git")
 sha256sums=('SKIP')
-
-#bigskel=$(pacman -Ss biglinux-skel- | awk -F'[/ ]' '{print $2}')
-conflicts=('big-skel')
-#"$bigskel"
+conflicts=('big-skel' 'bashrc-manjaro')
 
 package() {
-    cp -r "${srcdir}/${pkgname}/etc/" "${pkgdir}/"
-    cp -r "${srcdir}/${pkgname}/usr/" "${pkgdir}/"
+    # Verify default folder
+    if [ -d "${srcdir}/${pkgname}/${pkgname}" ]; then
+        InternalDir="${srcdir}/${pkgname}/${pkgname}"
+    else
+        InternalDir="${srcdir}/${pkgname}"
+    fi
+
+
+    # Copy files
+    if [ -d "${InternalDir}/usr" ]; then
+        cp -r "${InternalDir}/usr" "${pkgdir}/"
+    fi
+
+    if [ -d "${InternalDir}/etc" ]; then
+        cp -r "${InternalDir}/etc" "${pkgdir}/"
+    fi
+
+    if [ -d "${InternalDir}/opt" ]; then
+        cp -r "${InternalDir}/opt" "${pkgdir}/"
+    fi
 }
