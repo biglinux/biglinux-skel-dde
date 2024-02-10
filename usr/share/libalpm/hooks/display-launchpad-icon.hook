@@ -1,0 +1,12 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = deepin-screen-recorder
+Target = deepin-printer
+Target = biglinux-skel-dde
+
+[Action]
+Description = Corrige a variável OnlyShowIn
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/big-icon-change
