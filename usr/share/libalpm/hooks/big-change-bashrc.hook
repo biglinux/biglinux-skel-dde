@@ -1,11 +1,10 @@
 [Trigger]
-Type = Package
+Type = Path
 Operation = Install
 Operation = Upgrade
-Target = etc/skel/.bashrc
-Target = biglinux-skel-xfce
+Target = etc/skel/.dot.bashrc
 
 [Action]
 Description = BigLinux change skel .bashrc
 When = PostTransaction
-Exec = /usr/share/libalpm/scripts/big-bashrc
+Exec = /usr/share/libalpm/scripts/big-change-bashrc
