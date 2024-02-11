@@ -164,4 +164,3 @@ else
     fi
 fi
 . /usr/share/bigdde/shell/ddelib.sh ; unset_var_proxy
-. /etc/bashrc
