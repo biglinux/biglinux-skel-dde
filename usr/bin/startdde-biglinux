@@ -9,9 +9,11 @@ if [ "$LANGUAGE" = "" ]; then
 fi
 
 # Checks if the shell has already been changed
-if [ ! -f "$HOME/.biglinux-shell-changed" ]; then
-    biglinux-change-default-shell bash-power
-    touch "$HOME/.biglinux-shell-changed"
+if [ ! -e "$HOME/.bashrc" ]; then
+    if [ ! -f "$HOME/.biglinux-shell-changed" ]; then
+        biglinux-change-default-shell bash-power
+        touch "$HOME/.biglinux-shell-changed"
+    fi
 fi
 
 #Faster AMD GPU
