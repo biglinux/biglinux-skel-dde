@@ -3,10 +3,36 @@
 # Path to the original dde-session binary
 ddeSessionOriginal="/usr/bin/dde-session-original"
 
+# Force language
+if [ "$LANGUAGE" = "" ]; then
+    export LANGUAGE=$LANG
+fi
+
+# Checks if the shell has already been changed
+if [ ! -f "$HOME/.biglinux-shell-changed" ]; then
+    biglinux-change-default-shell bash-power
+    touch "$HOME/.biglinux-shell-changed"
+fi
+
+#Faster AMD GPU
+export RADV_PERFTEST=sam,nggc,ext_ms
+
+#OBS Studio game capture with vulkan
+if [ -e "/usr/bin/obs-vkcapture" ]; then
+    export OBS_USE_EGL=1
+    export OBS_VKCAPTURE=1
+    export VK_INSTANCE_LAYERS=VK_LAYER_OBS_vkcapture_64:VK_LAYER_VALVE_steam_overlay_64 #Fix MangoHUD overlay
+fi
+
 #Keyboard LED
 if [ -e "$HOME/.config/ledkeyboard" ]; then
    change-keyboard-led on
 fi
+
+### Execute in LiveCD
+# if [ -e /usr/bin/startbiglive ]; then
+#    This....
+# fi
 
 # Run the original dde-session
 exec "$ddeSessionOriginal" "$@"

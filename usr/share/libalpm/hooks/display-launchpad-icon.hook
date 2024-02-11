@@ -2,10 +2,11 @@
 Type = Package
 Operation = Install
 Operation = Upgrade
-Target = deepin-icon-theme
+Target = deepin-screen-recorder
+Target = deepin-printer
 Target = biglinux-skel-dde
 
 [Action]
-Description = BigLinux icon change
+Description = Corrige a variável OnlyShowIn
 When = PostTransaction
 Exec = /usr/share/libalpm/scripts/big-icon-change
