@@ -3,11 +3,11 @@
         "type": "index+monitorName",
         "wallpaperInfo": [
             {
-                "uri": "file:///usr/share/wallpapers/deepin/dog7.jpeg",
+                "uri": "file:///usr/share/wallpapers/deepin/desktop.jpg",
                 "wpIndex": "1+Virtual-1"
             },
             {
-                "uri": "file:///usr/share/wallpapers/deepin/animal owl8.jpeg",
+                "uri": "file:///usr/share/wallpapers/deepin/desktop.jpg",
                 "wpIndex": "2+Virtual-1"
             }
         ]

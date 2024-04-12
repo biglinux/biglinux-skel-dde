@@ -3,7 +3,7 @@
   "version": "1.0",
   "contents": {
     "excludeAppIdList": {
-    "value": ["dtk-exhibition.desktop", "msm_kde_notifier_settings.desktop", "org.kde.konsole.desktop", "gtk-lshw.desktop", "mpv.desktop", "pamac--updates.desktop", "dde-computer.desktop", "dde-trash.desktop", "cups.desktop"],
+    "value": ["dtk-exhibition.desktop", "msm_kde_notifier_settings.desktop", "org.kde.konsole.desktop", "gtk-lshw.desktop", "mpv.desktop", "pamac--updates.desktop", "dde-computer.desktop", "dde-trash.desktop", "cups.desktop","big-preload-user.desktop", "vboxclient.desktop", "vmware-user.desktop", "xapp-sn-watcher.desktop"],
     "flags": [],
     "name": "Exclude Application ID List",
     "description": "List of application's desktop IDs that should be exclude/hidden from the launchpad.",
